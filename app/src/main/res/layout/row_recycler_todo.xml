@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginTop="12dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_corners"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_tops"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/tv_task_title"
+            style="@style/GeneralText"
+            android:text="task title"
+            android:textColor="#FFF" />
+
+        <ImageButton
+            android:padding="0dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_baseline_delete_24"
+            android:id="@+id/button_delete_record"/>
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:padding="4dp"
+        android:id="@+id/tv_task_description"
+        style="@style/GeneralText"
+        android:text="this is a sample text" />
+
+</LinearLayout>

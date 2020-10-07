@@ -1,0 +1,30 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        style="@style/GeneralText"
+        android:layout_marginBottom="21dp"
+        android:text="Add New Item:"
+        android:textSize="21sp" />
+
+    <EditText
+        android:id="@+id/et_title"
+        style="@style/EditTextStyle"
+        android:hint="Title" />
+
+    <EditText
+        android:id="@+id/et_description"
+        style="@style/EditTextStyle"
+        android:hint="Description" />
+
+    <Button
+        android:id="@+id/button_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="add" />
+
+
+</LinearLayout>

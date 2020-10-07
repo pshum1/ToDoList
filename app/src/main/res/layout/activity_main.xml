@@ -1,0 +1,30 @@
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/tv_todo"
+        style="@style/GeneralText"
+        android:text="To-Do:"
+        android:textSize="28dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/button_add_floating"
+        android:layout_below="@id/tv_todo"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/button_add_floating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:padding="15dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:src="@drawable/ic_baseline_add_24"/>
+
+
+</RelativeLayout>
